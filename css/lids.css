@@ -1,0 +1,14 @@
+.btnLids{
+     text-align: center;
+     vertical-align: center;
+     width: 150px;
+     /* height: 100px; */
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     margin-top: -160px;
+     margin-left: -160px;
+     /* border-radius: 10px; */
+     /* background-color: rgba(255, 255, 255, 0.75); */
+     padding: 50px;
+}

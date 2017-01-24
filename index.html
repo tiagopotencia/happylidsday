@@ -1,25 +1,10 @@
 <html>
     
     <head>
-        <script src="lids/js/ion.sound.min.js"></script>
+        <script src="js/ion.sound.min.js"></script>
         <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-        
-        <style>
-            .btnLids{
-                    text-align: center;
-                    vertical-align: center;
-                    width: 150px;
-                    /* height: 100px; */
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    margin-top: -160px;
-                    margin-left: -160px;
-                    /* border-radius: 10px; */
-                    /* background-color: rgba(255, 255, 255, 0.75); */
-                    padding: 50px;
-            }
-            </style>
+        <script src="js/lids.js"></script>
+        <link href="css/lids.css" rel="stylesheet"></link>
     </head>
     
     <body>
@@ -28,37 +13,6 @@
         
         <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif" id="btnLoading" onclick="play()" class="btnLids"/>        
         <img src="https://image.freepik.com/free-icon/play-button_318-42541.jpg" id="btnLids" type="button" onclick="play()" style="display: none;" class="btnLids"/>
-        <script>
-            // init bunch of sounds
-            ion.sound({
-                sounds: [
-                    {
-                        name: "lids",
-                        preload: true
-                    },
-                ],
-
-                // main config
-                path: "lids/sounds/",
-                preload: true,
-                multiplay: false,
-                volume: 0.9,
-                
-                ready_callback: hey
-            });
-            
-            function hey(){
-                 $('#btnloading').hide();
-                 $('#btnLids').show();
-            }
-
-            // play sound
-            function play(){
-                ion.sound.play("lids");
-            }
-       
-        </script>
-        
     </body>
     
 </html>
