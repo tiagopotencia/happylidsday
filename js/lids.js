@@ -1,5 +1,6 @@
-// init bunch of sounds
-ion.sound({
+$(document).ready(function(){
+
+    ion.sound({
     sounds: [
         {
             name: "lids",
@@ -15,9 +16,11 @@ ion.sound({
     ready_callback: hey
 });
 
+});
+
 function hey(){
-     $('#btnloading').hide();
-     $('#btnLids').show();
+     $('#loading').hide();
+     $('#btn-yeyee').show();
 }
 // play sound
 function play(){
