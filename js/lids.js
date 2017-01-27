@@ -25,4 +25,5 @@ function hey(){
 // play sound
 function play(){
     ion.sound.play("lids");
+    party();
 }
